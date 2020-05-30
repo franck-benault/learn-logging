@@ -49,4 +49,9 @@
 			</plugin>
 		</plugins>
 	</build>
+	<modules>
+		<module>L001-log4j</module>
+		<module>L002-log4j2</module>
+		<module>L003-flogger</module>
+	</modules>
 </project>
