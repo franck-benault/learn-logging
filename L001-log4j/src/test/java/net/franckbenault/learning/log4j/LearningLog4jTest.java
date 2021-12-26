@@ -54,18 +54,22 @@ class LearningLog4jTest {
 	}
 	
 	@Test
-	public void testLogIsDebugEnabled() {
+	public void testLogIsXXXEnabled() {
 		
 		Logger logger = Logger.getLogger("MyLogger");
 		
-		if(logger.isDebugEnabled()) logger.trace("Hello3");
-		if(LOGGER.isDebugEnabled()) LOGGER.trace("Hello3");
+		
+		if(logger.isTraceEnabled()) logger.trace("Hello3");
+		if(LOGGER.isTraceEnabled()) LOGGER.trace("Hello3");
 		
 		if(logger.isDebugEnabled()) logger.debug("Hello3");
 		if(LOGGER.isDebugEnabled()) LOGGER.debug("Hello3");
 		
-		if(logger.isDebugEnabled()) logger.info("Hello3");
-		if(LOGGER.isDebugEnabled())LOGGER.info("Hello3");
+		if(logger.isInfoEnabled()) logger.info("Hello3");
+		if(LOGGER.isInfoEnabled()) LOGGER.info("Hello3");
+		
+		if(logger.isErrorEnabled()) logger.error("Hello3");
+		if(LOGGER.isErrorEnabled()) LOGGER.error("Hello3");
 		
 	}
 
