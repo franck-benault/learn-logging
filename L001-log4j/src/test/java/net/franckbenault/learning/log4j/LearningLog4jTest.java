@@ -42,6 +42,9 @@ class LearningLog4jTest {
 		logger.info("Hello3");
 		LOGGER.info("Hello3");
 		
+		logger.warn("Hello3");
+		LOGGER.warn("Hello3");
+		
 		logger.error("Hello3");
 		LOGGER.error("Hello3");
 		
