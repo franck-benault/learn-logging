@@ -11,6 +11,7 @@
 		<slf4j-release-version>1.7.28</slf4j-release-version>
 		<junit.jupiter.version>5.5.1</junit.jupiter.version>
 		<junit.platform.version>1.5.1</junit.platform.version>
+		<log4jbridge.version>2.17.0</log4jbridge.version>
 	</properties>
 
 
@@ -33,6 +34,23 @@
 				<artifactId>system-rules</artifactId>
 				<version>1.19.0</version>
 				<scope>test</scope>
+			</dependency>
+			<!-- log4j 1 to 2 bridge -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-1.2-api</artifactId>
+				<version>${log4jbridge.version}</version>
+			</dependency>
+			<!-- log4j2 -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>${log4jbridge.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${log4jbridge.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
