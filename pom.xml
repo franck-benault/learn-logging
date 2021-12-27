@@ -84,5 +84,6 @@
 		<module>L002-log4j2</module>
 		<module>L003-flogger</module>
 		<module>L004-slf4j</module>
+		<module>L005-slf4j2</module>
 	</modules>
 </project>
