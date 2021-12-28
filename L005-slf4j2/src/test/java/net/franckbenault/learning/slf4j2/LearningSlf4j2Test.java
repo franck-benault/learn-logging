@@ -64,7 +64,7 @@ public class LearningSlf4j2Test {
 	}
 	
 	@Test
-	public void testLogFluentApi() {
+	public void testLogFluentApiSimpleExamples() {
 		
 		Logger logger = LoggerFactory.getLogger("MyLogger");
 		
@@ -89,6 +89,34 @@ public class LearningSlf4j2Test {
         // using fluent API
         logger.atInfo().addKeyValue("oldT", oldT).addKeyValue("newT", newT).log("Temperature changed.");          
 		
+	}
+	
+	@Test
+	public void testLogFluentApiAdvancedExamples() {
+		
+		Logger logger = LoggerFactory.getLogger("MyLogger");
+		
+		String divisionMessage = "division {} by {} , res= {} ";
+		String simpleMessageWithArgument = "Hello5 arg1={}, Arg2={}";
+		
+        int newT = 15;
+        int oldT = 16;
+        // using fluent API
+        logger.atInfo().addKeyValue("oldT", oldT).addKeyValue("newT", newT).log("Temperature changed.");          
+	 
+        logger.atInfo().addArgument(15L).addArgument(17L).log(simpleMessageWithArgument);
+	
+        int a= 1;
+        int b=0;
+        Integer res =null;
+	
+        try {
+        	res = a/b;
+        } catch (Exception e) {
+        	logger.atInfo()
+        		.setCause(e).addArgument(a).addArgument(b).addArgument(res)
+        		.log(divisionMessage);
+        }
 	}
 
 }

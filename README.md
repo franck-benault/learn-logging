@@ -14,10 +14,20 @@ it has no level FATAL
 
 ## Slf4j 2.X
 ### Fluent API
-Example
+Examples
 
 logger.atInfo().log(simpleMessage);
 
+logger.addArgument(...).log(...);
+
+logger.addKeyValue(k,v).log(...);
+
+logger.setCause(...).log(...);
+
+and you can combine several methods and finish it by log(...)
+
+logger.setCause(...).addKeyValue(k,v).addKeyValue(k,v).addArgument(...).addArgument(...).log(...);
+
 ### Issues
-need java9 for integration with log4j2
+issue with the integration with log4j2
 
