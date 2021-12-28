@@ -1,13 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>net.franckbenault.logging</groupId>
-    <artifactId>logging-learning</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>L003-flogger</artifactId>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>net.franckbenault.logging</groupId>
+		<artifactId>logging-learning</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>L003-flogger</artifactId>
 	<properties>
-		<flogger.version>0.5.1</flogger.version>
+		<flogger.version>0.7.4</flogger.version>
 	</properties>
 
 	<dependencies>
@@ -15,6 +17,12 @@
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-runner</artifactId>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -28,7 +36,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.google.flogger</groupId>
-			<artifactId>flogger-system-backend</artifactId>
+			<artifactId>flogger-log4j2-backend</artifactId>
 			<version>${flogger.version}</version>
 		</dependency>
 

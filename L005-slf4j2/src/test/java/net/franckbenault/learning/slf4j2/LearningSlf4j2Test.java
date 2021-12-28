@@ -83,12 +83,7 @@ public class LearningSlf4j2Test {
 		
 		logger.atError().log(simpleMessage);
 		LOGGER.atError().log(simpleMessage);
-		
-        int newT = 15;
-        int oldT = 16;
-        // using fluent API
-        logger.atInfo().addKeyValue("oldT", oldT).addKeyValue("newT", newT).log("Temperature changed.");          
-		
+				
 	}
 	
 	@Test

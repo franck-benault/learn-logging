@@ -1,10 +1,28 @@
-# learn-logging
-learn java logging framework
+# Learn Java logging frameworks
+Here are a list of example of logging frameworks
+Due to my company I have to use as backend log4j2
+
+| Frawework | interface or backend end | last version | remarks |
+| ------------- | ------------- | ------------- | ------------- |
+| log4j1  | backend | 1.2.17 08/2012 | Deprecated |
+| log4j2  | backend | 2.17.0 12/2021 | OK for production |
+| flogger  | interface | 0.7.4 12/2021 | OK for production with log4j2 |
 
 ## Old log4j 1.X
-This library is deprecated and mustn't be used anymore.
+This library is **deprecated** and mustn't be used anymore as backend.
 But if you have a dependency which needs log4j 1.X.
 You should be to use the brigde library to log4j2.
+
+## Log4j2
+This library can be considered as the main framework.
+
+## Flogger
+This is a powerful framework using a fluent API (less rich than Slf4j).
+Its integration with LOG4j2 as backend is now easy.
+This framework has no dependency.
+
+This is the frameworks I suggest to used above log4j2.
+ 
 
 ## Slf4j 1.7.X
 Current stable version
