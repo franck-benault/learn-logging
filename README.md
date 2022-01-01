@@ -21,9 +21,13 @@ But if you have a dependency which needs log4j 1.X.
 You should be to use the brigde library to log4j2.
 
 ## Log4j2
+web site https://logging.apache.org/log4j/2.x/
+
 This library can be considered as the main framework.
 
 ## Flogger
+web site https://google.github.io/flogger/
+
 This is a powerful framework using a fluent API (less rich than Slf4j).
 Its integration with LOG4j2 as backend is now easy.
 This framework has no dependency.
@@ -32,6 +36,8 @@ I suggest to used above log4j2 for production.
  
 
 ## Slf4j 1.7.X
+web site  https://www.slf4j.org/
+
 Current stable version
 it has no fluent API
 it has no level FATAL
@@ -58,4 +64,6 @@ logger.setCause(...).addKeyValue(k,v).addKeyValue(k,v).addArgument(...).addArgum
 ### Issues
 issue with the integration with log4j2
 
+## Logback
 
+web site https://logback.qos.ch/
