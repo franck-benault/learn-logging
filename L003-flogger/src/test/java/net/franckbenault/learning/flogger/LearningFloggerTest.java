@@ -1,11 +1,11 @@
 package net.franckbenault.learning.flogger;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
 
 import org.junit.jupiter.api.Test;
 
 import com.google.common.flogger.FluentLogger;
+import com.google.common.flogger.LazyArgs;
 import com.google.common.flogger.MetadataKey;
 import com.google.common.flogger.StackSize;
 
@@ -103,5 +103,30 @@ class LearningFloggerTest {
         		.log(divisionMessage, a, b, res,"FULL");
         }
 	}
+	
+	private int slowMethod()  {
+		
+		try {
+			TimeUnit.SECONDS.sleep(25);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return 100;
+	}
 
+	@Test
+	public void testLogFluentApiAdvancedExamplesLazy() {
+				
+		logger.atInfo().log("Start1");
+		logger.atFinest().log("message %d",  LazyArgs.lazy(() -> slowMethod()));
+		logger.atInfo().log("end1");
+
+		logger.atInfo().log("Start2");
+		logger.atFinest().log("message %d",  slowMethod());
+		logger.atInfo().log("end2");
+
+
+	}
 }
