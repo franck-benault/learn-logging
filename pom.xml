@@ -12,6 +12,7 @@
 		<junit.jupiter.version>5.8.2</junit.jupiter.version>
 		<junit.platform.version>1.8.2</junit.platform.version>
 		<log4j2.version>2.17.1</log4j2.version>
+		<reload4j.version>1.2.19</reload4j.version>
 	</properties>
 
 
@@ -34,6 +35,12 @@
 				<artifactId>system-rules</artifactId>
 				<version>1.19.0</version>
 				<scope>test</scope>
+			</dependency>
+			<!-- reload4j log4j1 api -->
+			<dependency>
+				<groupId>ch.qos.reload4j</groupId>
+				<artifactId>reload4j</artifactId>
+				<version>${reload4j.version}</version>
 			</dependency>
 			<!-- log4j 1 to 2 bridge -->
 			<dependency>
@@ -80,7 +87,8 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>L001-log4j1</module>
+		<module>L001a-reload4j</module>
+		<module>L001b-log4j1to2</module>
 		<module>L002-log4j2</module>
 		<module>L003-flogger</module>
 		<module>L004-slf4j</module>

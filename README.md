@@ -20,6 +20,9 @@ This library is **deprecated** and mustn't be used anymore as backend.
 But if you have a dependency which needs log4j 1.X.
 You should be to use the brigde library to log4j2.
 
+But because this version is still used in old project, a reload project has been created **reload4j**.
+https://reload4j.qos.ch/
+
 ## Log4j2
 web site https://logging.apache.org/log4j/2.x/
 
