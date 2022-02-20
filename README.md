@@ -5,7 +5,7 @@ Due to my company I have to use as backend log4j2
 | Frawework | interface or backend end | last version | remarks |
 | ------------- | ------------- | ------------- | ------------- |
 | log4j1  | backend | 1.2.17 08/2012 | Deprecated |
-| log4j2  | backend | 2.17.0 12/2021 | Ready for production |
+| log4j2  | backend | 2.17.1 12/2021 | Ready for production |
 | flogger  | interface | 0.7.4 12/2021 | Ready for production with log4j2 |
 | slf4j 1.7  | interface | 1.7.32 12/2021 | Ready for production with log4j2 |
 | slf4j 2  | interface | Alpha | Not yet ready for production |
