@@ -80,7 +80,7 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>L001-log4j</module>
+		<module>L001-log4j1</module>
 		<module>L002-log4j2</module>
 		<module>L003-flogger</module>
 		<module>L004-slf4j</module>
