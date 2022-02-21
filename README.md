@@ -10,6 +10,7 @@ Due to my company I have to use as backend log4j2
 | slf4j 1.7  | interface | 1.7.32 12/2021 | Ready for production with log4j2 |
 | slf4j 2  | interface | Alpha | Not yet ready for production |
 | logback  | backend | 1.2.10 12/2021 | Ready for production |
+| tinylog  | backend | 2.4.1 12/2021 | Ready for production |
 
 ## Links
 
@@ -70,3 +71,8 @@ issue with the integration with log4j2
 ## Logback
 
 web site https://logback.qos.ch/
+
+## Tinylog
+
+web site https://tinylog.org/
+
