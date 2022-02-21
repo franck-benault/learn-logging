@@ -9,6 +9,7 @@
                 pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
         </Console>
         <File name="LogToFile" fileName="logs/app.log">
+        	<ThresholdFilter level="INFO"/> 
             <PatternLayout>
                 <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n</Pattern>
             </PatternLayout>
