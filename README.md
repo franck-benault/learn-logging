@@ -46,6 +46,9 @@ Current stable version
 it has no fluent API
 it has no level FATAL
 
+This is an interface. So you have to use a backend library.
+For the last version 1.7.32, if you use as  backend Log4j1 in fact you use Reload4j
+
 
 ## Slf4j 2.X
 ### Fluent API
