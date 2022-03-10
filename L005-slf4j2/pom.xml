@@ -10,7 +10,7 @@
 	<artifactId>L005-slf4j2</artifactId>
 	
 	<properties>
-		<slf4j2.version>2.0.0-alpha5</slf4j2.version>
+		<slf4j2.version>2.0.0-alpha6</slf4j2.version>
 	</properties>
 	
 	<dependencies>
